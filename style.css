@@ -17,13 +17,17 @@ header {
     background-repeat: no-repeat;
     text-align: center;
     background: url('/images/bg-header-desktop.png');
-    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
-    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+            -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+        mask-image: linear-gradient(to bottom, rgb(255, 254, 254) 10%, transparent 100%);
 }
 
 .header_logo {
     margin-top: 70px;
     height: 18vh;
+}
+
+h3{
+    font-size:1.5rem;
 }
 
 .branding_container {
@@ -32,7 +36,7 @@ header {
 
 .branding_title,
 .feature_title {
-    font-size: 2rem;
+   
     line-height: 1.2;
 }
 
