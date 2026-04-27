@@ -30,74 +30,100 @@ header {
     text-align: center;
 }
 
-.branding_title {
+.branding_title,
+.feature_title {
     font-size: 2rem;
     line-height: 1.2;
 }
 
-.branding_title span {
-    display: block;
-}
 
-.branding_subtitle {
+.branding_subtitle,
+.feature_subtitle {
     color: #808080;
     margin-top: 20px;
     line-height: 1.5;
     font-weight: lighter;
 }
 
-.branding_subtitle span {
+.branding_subtitle span,
+.branding_title span .feature_subtitle span {
     display: block;
-
 }
+
 
 
 .btn_Ios,
 .btn_Mac {
-    width: 65vw;
+    width: 85vw;
     padding: 18px;
     border-radius: 50px;
-    margin-right: 10px;
-    margin-bottom: 40px;
+    margin-right: 8px;
+    margin-bottom: 25px;
     border: none;
     font-size: 1rem;
-    color:white;
+    color: white;
     font-family: "Bai Jamjuree", sans-serif;
-   
+
 }
 
 .btn_Ios {
-    background-color:  #26baa4;
+    background-color: #26baa4;
     box-shadow: 2px 2px 2px 2px #26baa4
-    
 }
+
 .btn_Mac {
-    background-color:#6173ff;
+    background-color: #6173ff;
     box-shadow: 2px 2px 2px 2px #6173ff
-    
 }
 
-.btn_Ios:hover{
-box-shadow: 2px 12px 12px 2px #26baa46f
+.btn_Ios:hover {
+    box-shadow: 2px 12px 12px 2px #26baa46f
 }
 
-.btn_Mac:hover{
-box-shadow: 2px 12px 12px 2px #6173ff6a
+.btn_Mac:hover {
+    box-shadow: 2px 12px 12px 2px #6173ff6a
 }
 
 .branding_btns {
-
-    margin-top: 20px;
+    margin-top: 50px;
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+
+
+/*section snipets*/
+.features_container {
+    text-align: center;
+    
+}
+
+.features_snipets {
+    margin-top: 125px;
+    margin-bottom: 20px;
 
 }
+
+.features_contents{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.img_computer {
+    width: 60vw;
+    margin-top: 50px
+}
+
+
+
 
 
 
 @media (min-width: 768px) {
-
 
     .branding_title span {
         display: inline;
@@ -118,8 +144,55 @@ box-shadow: 2px 12px 12px 2px #6173ff6a
         justify-self: center;
         flex-direction: row;
         width: 35vw;
+    }
+
+    .feature_title span {
+        display: inline;
+    }
+
+    .branding_title span:first-child::after {
+        content: " ";
+    }
+
+    .feature_subtitle {
+
+        max-width: 80vw;
+        /* ajusta hasta que te coincida el diseño */
+        line-height: 1.6;
+        margin: 0 auto;
 
     }
 
+    .feature_subtitle span {
+        display: inline;
+    }
 
+     .features_contents{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .features_contents img{
+        transform: translateX(-100px)
+    }
+
+
+}
+
+@media (min-width: 320px) {
+
+    header {
+        height: 40vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        background: url('/images/bg-header-desktop.png');
+        -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 80%);
+        mask-image: linear-gradient(to bottom, rgb(255, 254, 254) 60%, transparent 100%);
+    }
+    
+   
+
+  
 }
