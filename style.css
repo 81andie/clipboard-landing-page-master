@@ -22,7 +22,7 @@ header {
 }
 
 .header_logo {
-    margin-top: 40px;
+    margin-top: 70px;
     height: 18vh;
 }
 
@@ -43,10 +43,14 @@ header {
     margin-top: 20px;
     line-height: 1.5;
     font-weight: lighter;
+    padding: 15px;
+    font-size: 1.2rem;
 }
 
 .branding_subtitle span,
-.branding_title span .feature_subtitle span {
+.branding_title span, .feature_subtitle span,
+.features_descriptions span
+{
     display: block;
 }
 
@@ -110,7 +114,28 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  padding:20px;
 }
+.features_descriptions{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    line-height: 2.1;
+    text-align: center;
+    color: #808080;
+}
+
+.features_descriptions h3
+{
+    color: #242323;
+    margin-top: 60px;
+    
+}
+.features_descriptions{
+    text-align: center;
+}
+
+
 
 
 .img_computer {
@@ -134,7 +159,8 @@ header {
         content: " ";
     }
 
-    .branding_subtitle span {
+    .branding_subtitle span,
+    .features_descriptions span{
         display: inline-block;
 
     }
@@ -156,7 +182,7 @@ header {
 
     .feature_subtitle {
 
-        max-width: 80vw;
+        max-width: 62vw;
         /* ajusta hasta que te coincida el diseño */
         line-height: 1.6;
         margin: 0 auto;
@@ -171,11 +197,26 @@ header {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
+        
+
     }
 
     .features_contents img{
         transform: translateX(-100px)
     }
+
+    
+       .features_descriptions{
+        text-align: left;
+    }
+   
+  .features_descriptions span{
+        display: inline-block;
+    }
+      
+    
+    
+ 
 
 
 }
@@ -191,7 +232,11 @@ header {
         -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 80%);
         mask-image: linear-gradient(to bottom, rgb(255, 254, 254) 60%, transparent 100%);
     }
-    
+
+     .features_contents img{
+      width: 75vw;
+    }
+
    
 
   
