@@ -155,10 +155,11 @@ h3 {
 
 }
 
-/*devices & wordFlow*/
+/*devices & wordFlow &clipboard*/
 
 .devices,
-.workflow {
+.workflow,
+.clipboard {
     text-align: center
 }
 
@@ -174,14 +175,18 @@ h3 {
 }
 
 .devices_container h1,
-.workflow h1 .grid_container h1 {
+.workflow h1,
+.grid_container h1,
+.clipboard_container h1 {
     margin-top: 125px;
-    color: #4c545d
+    color: #4c545d;
+    margin-bottom: 20px;
 }
 
 .devices_container p,
 .workflow p,
-.grid_container p {
+.grid_container p,
+.clipboard_container p {
     margin-top: 10px;
     color: #9fabb2;
 }
@@ -211,18 +216,42 @@ h3 {
 /*grid-sponsors*/
 
 .gridsponsors {
-   display: flex;
-   flex-direction: column;
-   justify-content:center;
-   align-items: center;
-   gap: 100px;
-   margin-top: 100px
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 100px
 }
 
 .gridsponsors img {
- width: 130px;
+    width: 130px;
 }
 
+.footer_container{
+    padding:30px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    background: #eeeff0;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont_img img{
+    width: 70px;
+}
+
+.container_p p{
+    line-height: 3.8;
+    text-align: center;
+    color: #9fabb2;
+}
+
+.container_icons{
+    display:flex;
+    gap:30px;
+}
 
 
 
@@ -343,19 +372,49 @@ h3 {
 
 
     .gridsponsors {
-   display: flex;
-   flex-direction: row;
-   justify-content:center;
-   align-items: center;
-   gap: 50px;
-   margin-top: 100px
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin-top: 100px
+    }
+
+    .gridsponsors img {
+        width: 120px
+    }
+
+
+    .footer_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:flex-start;
+    margin-top:120px;
+  
+    gap: 200px;
 }
 
- .gridsponsors img{
-    width: 120px
- }
+.footer_features{
+    display: flex;
+    justify-content: center;
+    align-items:self-start;
+    gap: 30px;
+    color: #9fabb2;
+    left:-20px;
+   
+}
 
+.container_p p{
+    line-height: 1.8;
+    text-align: left;
+    color: #9fabb2;
+}
 
+.container_icons{
+   
+    align-items:center;
+}
 
 
 
