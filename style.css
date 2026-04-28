@@ -17,8 +17,8 @@ header {
     background-repeat: no-repeat;
     text-align: center;
     background: url('/images/bg-header-desktop.png');
-            -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
-        mask-image: linear-gradient(to bottom, rgb(255, 254, 254) 10%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+    mask-image: linear-gradient(to bottom, rgb(255, 254, 254) 10%, transparent 100%);
 }
 
 .header_logo {
@@ -26,8 +26,8 @@ header {
     height: 18vh;
 }
 
-h3{
-    font-size:1.5rem;
+h3 {
+    font-size: 1.5rem;
 }
 
 .branding_container {
@@ -36,7 +36,7 @@ h3{
 
 .branding_title,
 .feature_title {
-   
+
     line-height: 1.2;
 }
 
@@ -56,10 +56,6 @@ h3{
 .feature_subtitle span {
     display: block;
 }
-
-
-
-
 
 .btn_Ios,
 .btn_Mac {
@@ -115,42 +111,30 @@ h3{
 }
 
 
-
-
 .grid_devices {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 50px;
-   
-   
+
 }
 
-.feature_block{
-   
+.feature_block {
     justify-content: center;
     text-align: center
 }
 
 /* MOBILE FIRST */
 .mobile-text {
-  display: block;
- 
- 
-}
+    display: block;
 
-.features_img{
-    display: flex;
-    justify-content: center;
 }
-
 
 .desktop-text {
-  display: none;
+    display: none;
 }
 
-.features_devices img {
+.img_computer {
+    object-fit: contain;
     width: 60vw;
-   
 }
 
 
@@ -158,8 +142,44 @@ h3{
     color: #808080;
     line-height: 1.6;
     padding: 10px;
-    margin-bottom: 30px;
-    }
+    margin-bottom: 10px;
+}
+
+.features_img {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+/*devices*/
+
+
+.devices {
+    text-align: center
+}
+
+.devices_image {
+    display: flex;
+    justify-content: center;
+}
+
+.devices img {
+    margin-top: 40px;
+    width: 70vw;
+
+}
+
+.devices_container h1{
+    margin-top: 125px;
+}
+
+.devices_container p {
+    margin-top:40px;
+    color: #808080;
+}
+
+
 
 
 
@@ -202,66 +222,71 @@ h3{
         line-height: 1.6;
         margin: 0 auto;
         margin-bottom: 60px;
-      
+
 
     }
 
     .feature_subtitle span {
         display: inline;
-        
+
     }
 
-        .grid_devices {
+    .grid_devices {
 
-         grid-template-columns: 1fr 1fr;
-        }
-    
+        grid-template-columns: 1fr 1fr;
+    }
 
-   
+
+
 
     .features_content {
         display: flex;
         flex-direction: column;
         gap: 50px;
-   
+
 
     }
 
     .feature_block h3 {
-        
+
         color: #242323;
         margin-bottom: 10px;
-    
-      
+
     }
 
     .feature_block p {
-        
+
         line-height: 1.6;
         padding: 10px;
     }
 
-    .feature_block{
-      
+    .feature_block {
+
         text-align: left;
     }
 
 
 
-  .mobile-text {
-    display: none;
-    color:gray
-    
-  }
+    .mobile-text {
+        display: none;
+        color: gray
+    }
 
-  .desktop-text {
-    display: block;
-  }
+    .desktop-text {
+        display: block;
+    }
 
-  .features_devices img {
-    transform: translateX(-100px);
+    .features_devices img {
+        transform: translateX(-100px);
 
-}
+    }
+
+    .devices img {
+        width: 60vw;
+    }
+
+
+
 
 
 
@@ -293,7 +318,7 @@ h3{
         width: 55vw;
     }
 
-   
+
 
 
 
