@@ -242,7 +242,7 @@ h3 {
     width: 70px;
 }
 
-.container_p p{
+.container_p  a{
     line-height: 3.8;
     text-align: center;
     color: #9fabb2;
@@ -252,6 +252,7 @@ h3 {
     display:flex;
     gap:30px;
 }
+
 
 
 
@@ -446,10 +447,14 @@ h3 {
     .features_contents img {
         width: 55vw;
     }
-
-
-
-
-
-
+    .footer_features{
+        flex-direction: column;
+    }
+    
 }
+
+
+
+
+
+
