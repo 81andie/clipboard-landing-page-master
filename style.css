@@ -242,7 +242,7 @@ h3 {
     width: 70px;
 }
 
-.container_p  a{
+.container_p  p {
     line-height: 3.8;
     text-align: center;
     color: #9fabb2;
@@ -446,9 +446,6 @@ h3 {
 
     .features_contents img {
         width: 55vw;
-    }
-    .footer_features{
-        flex-direction: column;
     }
     
 }
